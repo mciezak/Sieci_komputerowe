@@ -1,0 +1,42 @@
+Zaplanuj 3 sieci:
+
+LAN 1/22
+Address:   192.168.100.0         11000000.10101000.011001 00.00000000
+Netmask:   255.255.252.0 = 22    11111111.11111111.111111 00.00000000
+Wildcard:  0.0.3.255             00000000.00000000.000000 11.11111111
+=>
+Network:   192.168.100.0/22      11000000.10101000.011001 00.00000000 
+Broadcast: 192.168.103.255       11000000.10101000.011001 11.11111111
+HostMin:   192.168.100.1         11000000.10101000.011001 00.00000001
+HostMax:   192.168.103.254       11000000.10101000.011001 11.11111110
+Hosts/Net: 1022 
+
+LAN 2/22
+Address:   192.168.104.0         11000000.10101000.011010 00.00000000
+Netmask:   255.255.252.0 = 22    11111111.11111111.111111 00.00000000
+Wildcard:  0.0.3.255             00000000.00000000.000000 11.11111111
+=>
+Network:   192.168.104.0/22      11000000.10101000.011010 00.00000000 
+Broadcast: 192.168.107.255       11000000.10101000.011010 11.11111111
+HostMin:   192.168.104.1         11000000.10101000.011010 00.00000001
+HostMax:   192.168.107.254       11000000.10101000.011010 11.11111110
+Hosts/Net: 1022                  
+LAN 3/22
+Address:   192.168.108.0         11000000.10101000.011011 00.00000000
+Netmask:   255.255.252.0 = 22    11111111.11111111.111111 00.00000000
+Wildcard:  0.0.3.255             00000000.00000000.000000 11.11111111
+=>
+Network:   192.168.108.0/22      11000000.10101000.011011 00.00000000 
+Broadcast: 192.168.111.255       11000000.10101000.011011 11.11111111
+HostMin:   192.168.108.1         11000000.10101000.011011 00.00000001
+HostMax:   192.168.111.254       11000000.10101000.011011 11.11111110
+Hosts/Net: 1022
+
+2. Rozwmieść PC, swiche i routery.
+3. Utwórz połączenia miedzy nimi. 
+4. Nadaj IP PC-tą i routerom.
+5. Skonfiguruj routery, wejdz w ustawienia CONFIG, włącz dany INTERFACE, a następnie przypisz mu IP i maskę.
+6. Uwtórz tablice routingu. Wejdź w ROUTING -> STATIC, a natępnie wpisz NETWORK (sieć, z którą chcemy się skomunikować), MASK i NEXT HOP (IP do którego musimy się udać, by dotrzeć do sieci).
+
+
+![zadanie1_czesc1_rozwiązanie](zadanie1_czesc1_rozwiązanie.png)
