@@ -39,4 +39,4 @@ Hosts/Net: 1022
 6. Uwtórz tablice routingu. Wejdź w ROUTING -> STATIC, a natępnie wpisz NETWORK (sieć, z którą chcemy się skomunikować), MASK i NEXT HOP (IP do którego musimy się udać, by dotrzeć do sieci).
 
 
-![zadanie1_czesc1_rozwiązanie](zadanie1_czesc1_rozwiązanie.png)
+
